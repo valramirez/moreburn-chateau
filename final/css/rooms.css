@@ -1,0 +1,154 @@
+/* The Secret Ingredient, which basicall */
+.foyer-text, .kitchen-text, .garden-text, .ballroom-text, .stair-text, .bedroom-text {
+  border: green 3px solid;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: rgba(0,0,0,0.7);
+  color: #7ac24e;;
+  font-family: lores-12;
+  font-size: 135%;
+  margin-top: 34%;
+}
+
+#convo {
+ background-color: transparent;
+ border: none;
+}
+
+#kitchen-ghost, #garden-ghost {
+ height: 60%;
+ width: auto;
+ float: right;
+}
+
+/* .kitchen-text {
+  border: green 3px solid;
+  padding: 10px;
+  padding-left: 40px;
+  pa111dding-right: 40px;
+  background-color: rgba(0,0,0,0.7);
+  color: ;
+  font-family: lores-12;
+  font-size: 135%;
+}
+
+.garden-text {
+  border: green 3px solid;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  font-family: lores-12;
+  font-size: 135%;
+}
+
+.ballroom-text {
+  border: green 3px solid;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  font-family: lores-12;
+  font-size: 135%;
+}
+
+.stair-text {
+  border: green 3px solid;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  font-family: lores-12;
+  font-size: 135%;
+}
+
+.bedroom-text {
+  border: green 3px solid;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  font-family: lores-12;
+  font-size: 135%;
+} */
+
+.room {
+  display: none;
+}
+
+.shown {
+  display: block !important;
+}
+
+body {
+  background-color: #cab8db;
+  font-family: "lores-12";
+  font-weight: 700;
+  font-style: normal;
+}
+
+button {
+  font-family: "lores-12";
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 2%;
+}
+
+img {
+  width: 40%;
+}
+
+/* Nav Bar setting stuff */
+nav {
+  margin-top: -1px;
+}
+
+ul {
+  list-style-type: none;
+  margin: -10px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: rgba(83, 33, 128, 0.5);
+}
+
+#start-over {
+  float: right;
+  z-index: 1;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    }
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  background-color: #532180;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  border-radius: 150px;
+  color: white;
+}
+
+li a:hover {
+  background-color: #2E6A18;
+  border-radius: 150px;
+  color: white;
+}
+
+
+#audio {
+  display: none;
+  autoplay: inherit;
+}
