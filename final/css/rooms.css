@@ -32,7 +32,7 @@
  float: left;
 } */
 
-#kitchen-ghost, #garden-ghost, #foyer-ghost, #ballroom-ghost, #bedroom-ghost {
+#kitchen-ghost, #garden-ghost, #foyer-ghost, #ballroom-ghost, #bedroom-ghost, #stair-ghost {
   display: block;
   margin: 0 auto;
   height: 25%;
@@ -191,6 +191,11 @@ img {
     max-height: 100%;
     height: auto;
     }
+
+#title {
+  width: 30%;
+  height: auto;
+}
 
 li {
   float: left;

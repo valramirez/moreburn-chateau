@@ -380,7 +380,6 @@ $("#goto-room7").click(function(){
                                                                           $("#convo9").remove();
                                                                           $("#player-4").remove();
                                                                             //add dialogue
-                                                                            $(".bedroom").append("<button id='ghost-necklace'><img id='necklace' src='img/necklace.png'></button>")
                                                                             $(".bedroom-text").append("<p id='player-5'>You don’t need to do this anymore, Nora. You had a family that loved you. You didn’t need to throw it away.</p>");
                                                                             $(".bedroom-text").append("<button id='convo10'>Continue</button");
                                                                               $("#convo10").click(function() {
