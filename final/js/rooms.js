@@ -31,7 +31,6 @@ $("#goto-room2").click(function(){
                   "background-attachment": "fixed",
                   "background-size": "cover",
                   });
-    $(".foyer-text").append("<img id='steve' src='steve.png'>");
           $(".foyer-text").append("<p id='second'>I’m surprised this place is even still standing! Most of the wood is severely damaged, and the constant creaking doesn’t quell my fears. Much of the original artwork and decor that wasn’t destroyed is still here. Locals must be too superstitious to steal from this place.</p>");
           $(".foyer-text").append("<button id='player-dialogue'>Continue</button>");
             //make new event listener
@@ -56,7 +55,7 @@ $("#goto-room3").click(function(){
                           $("#kitchen-ghost").click(function() {
                             console.log("hi");
                             //remove img button
-                            $("#convo").remove();
+                            // $("#convo").remove();
                             //add conversation
                             $(".kitchen-text").append("<p id='player-1'>Excuse me, miss?</p>");
                             $(".kitchen-text").append("<button id='convo2'>Continue</button>");
@@ -314,29 +313,6 @@ $("#goto-room6").click(function(){
                   "background-attachment": "fixed",
                   "background-size": "cover",
                   });
-    function itemSort(str) {
-      len = str.length;
-        mod = len % 7;
-
-        //here are the conditionals that are assigned to the user. The correct answer is "Bedroom"
-        if (mod == 0) {
-          return "Looks like you didn't write anything. Stop wasting our time and go look!"
-        }
-        if (mod > 1) {
-          return "Hmm.. That doesn't sound right. The item you are searching for is in <b>the kitchen</b>."
-        }
-        else if (mod == 1) {
-            return "That's correct! You may enter the room with caution."
-        }
-      }
-
-      var myButton = document.getElementById("#room-enter");
-      myButton.addEventListener(function() {
-      var name = document.getElementById("input").value;
-      var item = itemSort(name);
-      newText = "<p>" + item + "</p>";
-      document.getElementById(".stair").innerHTML = newText;
-      })
 });
 
 //set conditional
@@ -353,7 +329,8 @@ $("#goto-room7").click(function(){
                   });
                         $("#bedroom-ghost").click(function() {
                           alert("You found a necklace! It’s a beautiful gold chain with a ruby cut into a heart shape. The locket opens to reveal a photo of a man, woman, and child. All three are smiling happily.");
-                          $("#convo").remove();
+                          // $("#convo").remove();
+                          // $("#bedroom-ghost").remove();
                             //add conversation
                             $(".bedroom-text").append("<p id='ghost-1'>You really shouldn’t have come here. The audacity of you to come poking around my home, you should be ashamed!</p>");
                             $(".bedroom-text").append("<button id='convo2'>Continue</button");
@@ -435,6 +412,15 @@ $("#goto-room7").click(function(){
                                                                                                       $("#convo14").click(function() {
                                                                                                         $("#convo14").remove();
                                                                                                         $("#player-mono4").remove();
+                                                                                                        $(".room.shown").removeClass("shown");
+                                                                                                        $("body").css({"background-image": "url('img/credits.gif')",
+                                                                                                                        "background-repeat":"no-repeat",
+                                                                                                                        "background-attachment": "fixed",
+                                                                                                                        "background-size": "cover",
+                                                                                                                        });
+                                                                                                                        $("#goto-room2").remove();
+                                                                                                                        $("#navi").remove();
+
                                                 });
                                               });
                                             });

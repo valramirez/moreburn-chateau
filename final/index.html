@@ -14,8 +14,8 @@
   </head>
   <body>
 
-    <nav>
-  		<ul>
+    <nav id="navi">
+  		<ul class="nav-list">
   			<li><img id="title" src="img/moreburn-nav.png"></li>
   			<li id="start-over"><a href="https://valramirez.github.io/moreburn-chateau/final/index.html">start over?</a></li>
   		</ul>
@@ -40,13 +40,16 @@
     <div class="room homepage shown">
       <img src="img/moreburn-type.png">
       <div>
-      <button id="goto-room2">Proceed</button>
+      <button id="goto-room2" class="enter-mannor">Proceed</button>
     </div>
     </div>
 
     <div class="room foyer">
-      <button id="goto-room6">Go to the Stairs</button>
-      <button id="goto-room3">Go into the Kitchen</button>
+      <div>
+        <button id='convo'><img id='foyer-ghost' src='./img/invisible-ghost.png'></button>
+      </div>
+      <button id="goto-room6" class="foyer-stair"><img id="left-arrow" src="img/arrow-left.png"><p class="button-text">Go to the Stairs</p></button>
+      <button id="goto-room3" class="foyer-kitchen"><img id="up-arrow" src="img/arrow-up.png"><p class="button-text">Go into the Kitchen</p></button>
       <div class="foyer-text">
 
       </div>
@@ -56,8 +59,8 @@
       <div class="ghost-kitchen-div">
         <button id='convo'><img id='kitchen-ghost' src='./img/kitchen-ghost.png'></button>
       </div>
-      <button id="goto-room2" onClick="javascript:goToFoyer()">Go back to Foyer</button>
-      <button id="goto-room4">Go to the Garden</button>
+      <button id="goto-room2" class="kitchen-foyer" onClick="javascript:goToFoyer()"><img id="left-arrow" src="img/arrow-left.png"><p class="button-text">Go back to Foyer</p></button>
+      <button id="goto-room4" class="kitchen-garden"><img id="right-arrow" src="img/arrow-right.png"><p class="button-text">Go to the Garden</p></button>
       <div class="kitchen-text">
 
       </div>
@@ -67,38 +70,44 @@
       <div class="ghost-garden-div">
         <button id='convo'><img id='garden-ghost' src='img/garden-ghost.png'></button>
       </div>
-      <button id="goto-room3" onClick="javascript:goToKitchen()">Go back to Kitchen</button>
-      <button id="goto-room5">Go to the Ballroom</button>
+      <button id="goto-room3" class="garden-kitchen" onClick="javascript:goToKitchen()"><img id="left-arrow" src="img/arrow-left.png"><p class="button-text">Go back to Kitchen</p></button>
+      <button id="goto-room5" class="garden-ballroom"><img id="right-arrow" src="img/arrow-right.png"><p class="button-text">Go to the Ballroom</p></button>
       <div class="garden-text">
 
       </div>
     </div>
 
     <div class="room ballroom">
-      <button id="goto-room2" onClick="javascript:goToFoyer()">Go to the Foyer</button>
+      <div>
+        <button id='convo'><img id='ballroom-ghost' src='./img/invisible-ghost.png'></button>
+      </div>
+      <button id="goto-room2" class="ballroom-foyer" onClick="javascript:goToFoyer()"><img id="up-arrow" src="img/arrow-up.png"><p class="button-text">Go to the Foyer</p></button>
       <div class="ballroom-text">
 
       </div>
     </div>
 
     <div class="room stair">
-      <button id="goto-room2" onClick="javascript:goToFoyer()">Go back to Foyer</button>
-      <button id="goto-room7">Go to the Bedroom</button>
-      <input type="text" id="input">
-      <button id="room-enter"> Enter Room </button>
+      <button id="goto-room2" class="foyer-stairs" onClick="javascript:goToFoyer()"><img id="left-arrow" src="img/arrow-left.png"><p class="button-text">Go back to Foyer</p></button>
+      <button id="goto-room7" class="bedroom-stairs"><img id="up-arrow" src="img/arrow-up.png"><p class="button-text">Go to the Bedroom</p></button>
       <div class="stair-text">
-
       </div>
     </div>
 
     <div class="room bedroom">
+      <div class="ghost-bedroom-div">
+        <button id='convo'><img id='bedroom-ghost' src='img/bedroom-ghost.png'></button>
+      </div>
       <div id="bedroom-buttons">
-      <button id="goto-room2" onClick="javascript:goToFoyer()">Go back to Foyer</button>
+      <button id="goto-room2" class="foyer-bedroom" onClick="javascript:goToFoyer()"><img id="left-arrow" src="img/arrow-left.png"><p class="button-text">Go back to Foyer</p></button>
     </div>
         <!-- <button id='convo'><img id='necklace' src='./img/necklace.png'></button> -->
       <div class="bedroom-text">
 
       </div>
+    </div>
+
+    <div class="room ending">
     </div>
 
   </body>

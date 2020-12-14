@@ -8,7 +8,17 @@
   color: #7ac24e;;
   font-family: lores-12;
   font-size: 135%;
-  margin-top: 34%;
+  margin-top: 2%;
+}
+
+.foyer-stair, .foyer-kitchen, .kitchen-foyer, .kitchen-garden, .garden-kitchen, .garden-ballroom, .ballroom-foyer, .foyer-stairs, .bedroom-stairs, .foyer-bedroom {
+  margin-top: 5%;
+  background-color: transparent;
+  border: none;
+}
+
+.foyer-kitchen, .kitchen-garden, .garden-ballroom, .bedroom-stairs {
+  float: right;
 }
 
 #convo {
@@ -16,11 +26,47 @@
  border: none;
 }
 
-#kitchen-ghost, #garden-ghost {
- height: 60%;
+/* #kitchen-ghost, #garden-ghost {
+ height: 25%;
  width: auto;
- float: right;
+ float: left;
+} */
+
+#kitchen-ghost, #garden-ghost, #foyer-ghost, #ballroom-ghost, #bedroom-ghost {
+  display: block;
+  margin: 0 auto;
+  height: 25%;
+  width: 100%;
 }
+
+.ghost-kitchen-div {
+  display: block;
+  margin: 0 auto;
+  height: 25%;
+  width: 100%;
+}
+
+.button-text{
+  color: black;
+  font-size: 130%;
+  background-color: rgba(225,225,225,0.7);
+}
+
+/* .bedroom-stairs {
+  float: right;
+  background-color: transparent;
+  border: none;
+} */
+
+#start-button {
+  background-color: purple;
+}
+
+/* #left-arrow, #up-arrow, #right-arrow {
+    width: 110px;
+    height: auto;
+    margin-top: 140%;
+} */
 
 /* .kitchen-text {
   border: green 3px solid;
@@ -86,10 +132,29 @@
 }
 
 body {
-  background-color: #cab8db;
   font-family: "lores-12";
   font-weight: 700;
   font-style: normal;
+}
+
+.enter-mannor {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.enter-mannor {
+  padding: 15px 30px;
+  font-size: 30px;
+  background-color: #532180;
+  color: white;
+  border: none;
+  border-radius: 150px;
+  margin-top: 200px;
+}
+
+.enter-mannor:hover {
+  color: green;
 }
 
 button {
@@ -100,7 +165,7 @@ button {
 }
 
 img {
-  width: 40%;
+  width: 30%;
 }
 
 /* Nav Bar setting stuff */
